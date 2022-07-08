@@ -1,0 +1,22 @@
+server:
+    port: 8081
+
+spring:
+  application:
+    name: Smaato-service
+
+#Registering in Eureka Server
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8661/eureka
+  instance:
+    hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
