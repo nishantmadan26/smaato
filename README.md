@@ -1,0 +1,2 @@
+# smaato
+smaato main application
